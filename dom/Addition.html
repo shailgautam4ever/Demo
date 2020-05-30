@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Addition.css">
+</head>
+<body>
+
+	<table border="0" class="tab">
+	<tr>
+		<th>
+			<label for="F">Enter the first number</label>
+		</th> 
+		<th> <label for="S">Enter the second number</label>
+		</th>
+	</tr>
+	<tr>
+		<th><input id="first" class="input" type="number" name=""></th>
+
+		<th><input id="second" class="input" type="number" name=""></th>
+	</tr>
+	<tr>
+		<th>
+		<input class="btn" type="button" onclick="add()" name="" value="Addition">
+		</th>
+		<th>
+		<div id="result"></div>
+		</th>
+
+	</tr>
+	<tr>
+		<th>
+			<input class="btn" type="button" onclick="sub()" name="" value="subtract" >
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<input class="btn" type="button" onclick="multi()"name="" value="Multiply">
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<button class="btn" " onclick="div()" name="Divide" value="">Divide</button>
+		</th>
+	</tr>
+</table>
+
+
+<script type="text/javascript">
+
+	
+
+	var a,b;
+	function getValue()
+	{
+
+	 a= Number(document.getElementById("first").value);
+
+	 b= Number(document.getElementById("second").value);
+	}
+
+	function add() 
+	{
+
+		getValue();
+		document.getElementById("result").innerHTML=a+b;
+
+	}
+
+	function sub()
+	{	
+		getValue();
+		document.getElementById("result").innerHTML=a-b;
+	}
+	function multi()
+	{	getValue();
+		document.getElementById("result").innerHTML=a*b;
+	}
+
+	function div(){
+		getValue();
+		document.getElementById("result").innerHTML= a/b;
+	}
+
+
+
+</script>
+
+</body>
+</html>

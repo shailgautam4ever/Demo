@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assignment.css">
+</head>
+<body >
+	<div class="main-container">
+		<div class="upper">
+			<div>
+				<form>
+					
+					<div class="design">
+						<div class="form-field">
+							<label>Maths</label>
+							<input id="maths" type="number" name="">
+						</div>
+						<div class="form-field">
+							<label>Hindi</label>
+							<input id="hindi" type="number" name="">
+						</div>
+						<div class="form-field">
+							<label>Science</label>
+							<input id="science" type="number" name="">
+						</div>
+						<div class="form-field">
+							<label>Computer</label>
+							<input id="computer" type="number" name="">
+						</div>
+						
+					</div>
+				</form>
+			</div>
+			<div class="btn">
+				<button onclick="per()">Result</button>
+			</div>
+			<div class="pix">
+				<img src="https://cdn.pixabay.com/photo/2020/04/18/16/54/tree-5059951_960_720.jpg" width="400px">
+			</div>
+		</div>
+		<div class="bottom">
+			
+				<div class="left-sub">
+					<span id="total">Total : 400</span>
+					<span id="obtain"></span>
+				</div>
+				<div class="right div">
+					<span id="percent">percentagee</span>
+					<span id="result">Pass</span>
+				</div>
+			
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var m,h,s,c, obtained, percentage;
+
+
+		function per() {
+			m= (document.getElementById("maths").value);
+			h= (document.getElementById("hindi").value);
+			s= (document.getElementById("science").value);
+			c= (document.getElementById("computer").value);
+				
+				if((m<0 || m>100)) return alert('invalid values');
+
+			obtained = +m + +h + +s + +c;
+
+			var obtMarks = document.getElementById("obtain");
+			obtMarks.innerHTML = 'Obtained Marks :' + obtained;
+
+			percentage = obtained*100/400;
+
+			document.getElementById("percent").innerHTML = 'percentage:' + percentage;
+
+			Myp=document.getElementById("result");
+
+			if ( percentage > 40)
+			{
+					Myp.innerHTML = 'PASS';
+			}
+			else {
+				Myp.innerHTML = 'PROMOTED';
+			}
+
+
+
+
+		}
+	</script>
+
+
+</body>
+</html>

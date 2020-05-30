@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+</head>
+<body>
+
+	<p id='demo'>jhgvjh</p>
+	<input id='name' value='' />
+	<button onclick="onBtnClick()">ok</button>
+	
+	<script type="text/javascript">
+		
+		// alert('Hi')
+		// var name = prompt('What is your name');
+
+		// console.log('answer', name)
+		
+		var myP = document.getElementById('demo');
+		
+		// myP.innerHTML = 'Name: ' + name;
+		// myP.style.color = 'pink';
+		// myP.style.fontSize = '100px';
+		
+		function onBtnClick() {
+			var myInput = document.getElementById('name').value;
+			console.log('myInput', myInput);
+			
+		}
+	</script>
+</body>
+</html>

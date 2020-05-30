@@ -1,0 +1,88 @@
+body{
+	margin: 0px;
+}
+.main-container{
+	
+
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	
+
+
+}
+label{
+	
+}
+
+input {
+	margin:20px; 
+}
+.upper {
+	display: flex;
+	flex:2;
+	background-color: lightgreen;
+}
+
+
+.design {
+	
+	border-style: solid;
+	border:none;
+	border-radius: 10px;
+	padding: 10px;
+	
+	margin:auto;
+	flex:1;
+}
+.design .form-field{
+	display: flex;
+	margin-bottom: 1px;
+	align-items: center;
+	justify-content: space-around;
+}
+.btn{
+	display: flex;
+	flex:1;
+	justify-content: center;
+	align-items: center;
+
+}
+button {
+	background-color: pink;
+	border:none;
+	width: 150px;
+	padding: 10px;
+	font-family: cursive;
+	color:white;
+	border-radius: 10px;
+
+}
+
+.pix {
+	display: flex;
+	flex:1;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.bottom {
+	
+	display: flex;
+	flex:1;
+	flex-direction: row;
+	justify-content: space-between;	
+	background-color: pink;
+	
+}
+
+.left-sub{
+	
+}
+.right-sub {
+	
+	align-self: flex-end;
+
+}

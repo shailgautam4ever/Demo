@@ -1,0 +1,44 @@
+body
+{	background-image: linear-gradient(lightgreen, skyblue);
+	font-family: arial;
+	}
+.input{
+	border:none;
+	background-color: #eee;
+	padding: 10px; 
+
+}
+
+label{
+	font-size: 18px;
+
+}
+
+.tab{
+	background-color: #fff;
+	padding:15px;
+	margin: auto;
+	box-shadow: -1px 2px 3px 2px #eee;
+	border-radius: 10px;
+	margin-top: 200px;
+}
+
+.btn{
+	border:none;
+	width: 200px;
+	padding :10px;
+	border-radius: 10px;
+	font-family: cursive;
+	background-color: pink;
+}
+
+.btn:hover {
+	background-color: #78ffd6 ;
+}
+
+#result {
+	background-color: #38ef7d;
+	width: 200px;
+	height: 40px;
+	border:none;
+}
