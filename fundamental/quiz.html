@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <p>What is the largest Continent</p>
+    <input type="text" id="ans3" name="answer">
+    
+    <textarea rows="3" cols="4" id="area"></textarea>
+
+    <button onclick="display()">Display</button>
+
+    <form id="myform">
+   
+    <p>what is the capital of india?</p>
+    <input type="radio" name="ans1" value="Mumbai">Mumbai<br>
+    <input type="radio" name="ans1" value="Delhi" >Delhi<br>
+    <input type="radio" name="ans1" value="Bengaluru">Bengaluru<br>
+    <input type="radio" name="ans1" value="Chandigarh">Chandigarh<br>
+
+    <p>what is the color of Happiness</p>
+    <input type="radio" name="ans2" value="Pink">Pink<br>
+    <input type="radio" name="ans2" value="BabyBlue" >BabyBlue<br>
+    <input type="radio" name="ans2" value="Rainbow" >Rainbow<br>
+    <input type="radio" name="ans2" value="Green" >Green<br>
+
+    <button onclick="displayRadio(document.getElementById('myform', 'ans1'))">radio</button>
+    
+
+
+    <!-- <input type="submit" onclick="display()"> SUBMIT -->
+    
+</form>
+
+
+    <script type="text/javascript">
+        function display(){
+        var a = document.getElementById('ans3').value;
+        // var a = form.elements(answer).value;
+
+        document.getElementById('area').innerHTML = a; }
+
+        function displayRadio(form , name){
+           var radios = form.elements[name];
+
+           for(var i=0; i<radios.length ; i++)
+           {
+               if(radios[i].checked)
+               {
+                   val = radios[i].value;
+                   console.log(val);
+                
+               }
+           } 
+           document.getElementById('area').innerHTML = val;
+
+        // if(a == "Asia")
+        // {
+        //     document.getElementById('area').innerHTML = a;
+        // } 
+        }
+        
+    </script>
+    
+</body>
+</html>
